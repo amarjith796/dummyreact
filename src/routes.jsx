@@ -6,11 +6,20 @@ import Users from "./containers/users";
 import NavbarComponent from "./components/NavBar/navbar";
 import Error from "./components/Error404Page/error";
 import Charts from "./components/Charts/Charts";
+import Slider, { Range } from "rc-slider";
+
+import "rc-slider/assets/index.css";
+
 // import { Container } from "reactstrap";
 const Home = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <h2>This is Home Component</h2>
+      <center>
+        <div style={{ width: "300px" }}>
+          <Range defaultValue={[0, 50]} pushable={true} />
+        </div>
+      </center>
     </div>
   );
 };
